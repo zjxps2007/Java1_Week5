@@ -4,7 +4,7 @@ public class Hw1 {
     public static void main(String[] args) {
         //변수 선언
         int num1,num2;
-        int sum = 0;
+        double sum;
         char n;
         Scanner sc = new Scanner(System.in);
 
@@ -21,22 +21,22 @@ public class Hw1 {
             //+일떄
             case '+':
                 sum = num1+num2;
-                System.out.println(num1+"+"+num2+"="+sum);
+                System.out.println(num1+"+"+num2+"="+(int)sum);
                 break;
             //-일떄
             case  '-':
                 sum = num1-num2;
-                System.out.println(num1+"-"+num2+"="+sum);
+                System.out.println(num1+"-"+num2+"="+(int)sum);
                 break;
             //*일떄
             case '*':
                 sum = num1*num2;
-                System.out.println(num1+"*"+num2+"="+sum);
+                System.out.println(num1+"*"+num2+"="+(int)sum);
                 break;
             // /일떄
             case '/':
-                sum = num1/num2;
-                System.out.println(num1+"/"+num2+"="+sum);
+                sum = (double)num1/(double) num2;
+                System.out.println((int)num1+"/"+(int)num2+"="+sum);
                 break;
         }
     }
